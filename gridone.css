@@ -1,0 +1,50 @@
+.item1{
+    grid-area: header;
+    background-color:rgb(109,190,79);
+}
+.item2{
+    grid-area: menu;
+    background-color:rgb(109,190,79);
+    
+}
+.item3{
+    grid-area: main;
+    background-color: rgb(251,178,47);
+    
+}
+.item4{
+    grid-area: right;
+    background-color:rgb(109,190,79);
+}
+.item5{
+    grid-area: footer;
+    background-color: rgb(236,52,55);
+}
+.item6{
+    grid-area: fotone;
+    background-color: rgb(251,178,47);
+}
+.item7{
+    grid-area: hdrtwo;
+   background-color: rgb(236,52,55); 
+}
+.item8{
+    grid-area: mainto;
+    background-color: rgb(236,52,55);
+    
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'menu menu header header hdrtwo hdrtwo'
+    'menu menu main mainto right right '
+     'menu menu footer fotone right right';
+     gap: 5px;
+                                             
+}
+.grid-container > div{
+    
+    text-align: center;
+    padding: 90px 0;
+    font-size: 30px;
+}
